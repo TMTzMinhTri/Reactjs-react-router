@@ -27,30 +27,31 @@ export default class TopMenu extends React.Component {
   }
   render() {
     return (
-      <Container>
-
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
+      <div className = "row bg-light">
+        {/* <Container> */}
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink>
+                    <Link to='/'>Home</Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink>
+                    <Link to='/products'>products</Link>
+                  </NavLink>
+                </NavItem>
                 <NavLink>
-                  <Link to='/'>Home</Link>
+                  <Link to='/about'>About</Link>
                 </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>
-                  <Link to='/products'>products</Link>
-                </NavLink>
-              </NavItem>
-              <NavLink>
-                <Link to='/about'>About</Link>
-              </NavLink>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </Container>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        {/* </Container> */}
+      </div>
     );
   }
 }
