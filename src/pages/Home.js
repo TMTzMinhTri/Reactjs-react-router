@@ -222,7 +222,7 @@ class Home extends Component {
             <div key="line1">
                 <Slide />
                 <Container>
-                    <h2 className = 'text-center m-3'>Danh Sách Sản Phẩm</h2>
+                    <p className = 'text-center m-3 h3'>Danh Sách Sản Phẩm</p>
                     <Row>
                         {productSale.map(item => (
                             <Col md = '4' sm= '5'>
