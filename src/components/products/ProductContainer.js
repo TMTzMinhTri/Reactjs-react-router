@@ -10,7 +10,7 @@ class ProductContainer extends React.Component {
         let _content = [];
         _content.push(
             <div key="line1">
-                <Container>
+                <Container className = 'align-items-sm-center mt-2'>
                     <p className='text-center m-3 h3'>{this.props.title}</p>
                     <Row>
                         {_data.map(item => (<Product item={item} />))}

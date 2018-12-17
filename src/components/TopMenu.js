@@ -33,11 +33,7 @@ export default class TopMenu extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink>
-                  <Link to='/'>Home</Link>
-                </NavLink>
-              </NavItem>
+              
               <NavItem>
                 <NavLink>
                   <Link to='/products'>products</Link>
