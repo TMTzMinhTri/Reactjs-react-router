@@ -208,7 +208,7 @@ module.exports = {
     getProductList: (type)=>{
         let result = [];
         for(let i in ProductsList) {
-            if(ProductsList[i].type && ProductsList[i].type.indexOf(type) != -1) {
+            if(ProductsList[i].type && ProductsList[i].type.indexOf(type) !== -1) {
                 result.push(ProductsList[i])
             }
         }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import {
-    Row, Col, Card, CardImg, CardText, CardBody,
-    CardTitle, Button, Container,CardLink
-} from 'reactstrap';
-import Modal from "react-responsive-modal";
+// import {
+//     Row, Col, Card, CardImg, CardText, CardBody,
+//     CardTitle, Button, Container,CardLink
+// } from 'reactstrap';
+// import Modal from "react-responsive-modal";
 
 import Slide from '../components/Slide';
 import Page from './Page';
 
-import ProductContainer from '../components/ProductContainer';
+import ProductContainer from '../components/products/ProductContainer';
 
 class Home extends Component {
     constructor(props) {
@@ -26,14 +26,14 @@ class Home extends Component {
         this.setState({ open: false });
     };
     buildContent() {
-        const { productSale, open } = this.state;
-        let _content = [];
-        _content.push(<Slide key="1" />)
-        _content.push(
+        // const { productSale, open } = this.state;
+        let content = [];
+        content.push(<Slide key="1" />)
+        content.push(
             <ProductContainer key="2" title="San Pham Moi" type="new"></ProductContainer>
         )
 
-        _content.push(
+        content.push(
             <ProductContainer key="3" title="San Pham Moi" type="banchay"></ProductContainer>
         )
         
@@ -75,7 +75,7 @@ class Home extends Component {
 
             </div>
         )*/
-        return <div key="line1">{_content}</div>
+        return <div key="line1">{content}</div>
     }
     render() {
         return (
