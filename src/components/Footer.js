@@ -18,10 +18,10 @@ class Footer extends Component {
             <div className = "bg-light">
                 <Container>
                     <Row className = 'p-3 mt-5' >
-                        <Col xs="12" md ='3' className = "d-flex justify-content-center flex-sm-column flex-md-row">{ icfb } <p> This is my facebook</p></Col>
-                        <Col xs="12" md ='3' className = "d-flex justify-content-center flex-sm-column flex-md-row">{ icins } <p> This is my instagram</p></Col>
-                        <Col xs="12" md ='3' className = "d-flex justify-content-center flex-sm-column flex-md-row">{ ictwitter } <p> This is my twitter</p></Col>
-                        <Col xs="12" md ='3' className = "d-flex justify-content-center flex-sm-column flex-md-row">{ icgithub } <p> This is my github</p></Col>
+                        <Col xs="12" md ='3' className = "d-flex justify-content-center align-items-center flex-column flex-md-row">{ icfb } <div> This is my facebook</div></Col>
+                        <Col xs="12" md ='3' className = "d-flex justify-content-center align-items-center flex-column flex-md-row">{ icins } <div> This is my instagram</div></Col>
+                        <Col xs="12" md ='3' className = "d-flex justify-content-center align-items-center flex-column flex-md-row">{ ictwitter } <div> This is my twitter</div></Col>
+                        <Col xs="12" md ='3' className = "d-flex justify-content-center align-items-center flex-column flex-md-row">{ icgithub } <div> This is my github</div></Col>
                     </Row>
                 </Container>
             </div>

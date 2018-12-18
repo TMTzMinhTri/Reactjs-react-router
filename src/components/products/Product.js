@@ -10,7 +10,7 @@ class Product extends React.Component {
     onCloseModal() { }
     render() {
         return (
-            <Col md='4' sm='12' className = "mt-sm-2 ">
+            <Col md='4' sm='12' className = "mt-2">
                 <Card>
                     <CardImg top width="100%"
                         src={this.props.item.imgURL}
@@ -19,7 +19,6 @@ class Product extends React.Component {
                         <CardTitle>{this.props.item.name}</CardTitle>
                         <CardText>{this.props.item.discription}</CardText>
                         <Button onClick={this.onOpenModal}>Xem chi tiết</Button>
-
                     </CardBody>
                 </Card>
             </Col>

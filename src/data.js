@@ -15,37 +15,49 @@ let ProductsList = [{
     "name": "Greenlam",
     "discription": "interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis",
     "imgURL": "http://dummyimage.com/322x242.jpg/dddddd/000000",
-    "type": ["new"]
+    "type": ["team"]
 }, {
     "id": "e5aed85d-ff52-42fd-b7b2-9eab3cb59868",
     "name": "Tampflex",
     "discription": "tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non",
-    "imgURL": "http://dummyimage.com/345x218.jpg/cc0000/ffffff"
+    "imgURL": "http://dummyimage.com/345x218.jpg/cc0000/ffffff",
+    "type": ["team"]
+
 }, {
     "id": "e740224a-17fb-443b-aa26-530e25919417",
     "name": "Pannier",
     "discription": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis",
-    "imgURL": "http://dummyimage.com/315x214.jpg/cc0000/ffffff"
+    "imgURL": "http://dummyimage.com/315x214.jpg/cc0000/ffffff",
+    "type": ["team"]
+
 }, {
     "id": "f778b8a8-2705-4867-820c-737c6a7a0c74",
     "name": "Greenlam",
     "discription": "venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede",
-    "imgURL": "http://dummyimage.com/336x232.jpg/5fa2dd/ffffff"
+    "imgURL": "http://dummyimage.com/336x232.jpg/5fa2dd/ffffff",
+    "type": ["team"]
+
 }, {
     "id": "aefb40e5-ac81-4fd8-8c39-10c8105c9de3",
     "name": "Konklab",
     "discription": "blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere",
-    "imgURL": "http://dummyimage.com/321x250.jpg/5fa2dd/ffffff"
+    "imgURL": "http://dummyimage.com/321x250.jpg/5fa2dd/ffffff",
+    "type": ["team"]
+
 }, {
     "id": "1796d1e7-1522-4036-b5b4-08154613a1ec",
     "name": "Solarbreeze",
     "discription": "erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at",
-    "imgURL": "http://dummyimage.com/330x221.jpg/5fa2dd/ffffff"
+    "imgURL": "http://dummyimage.com/330x221.jpg/5fa2dd/ffffff",
+    "type": ["team"]
+
 }, {
     "id": "5fa10bd8-a197-4119-8c15-93b3d2d999d5",
     "name": "Viva",
     "discription": "quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
-    "imgURL": "http://dummyimage.com/332x209.jpg/dddddd/000000"
+    "imgURL": "http://dummyimage.com/332x209.jpg/dddddd/000000",
+    "type": ["new"]
+
 }, {
     "id": "ebc1ffa0-99a8-41ca-8cd1-84573bd1c51c",
     "name": "Stringtough",

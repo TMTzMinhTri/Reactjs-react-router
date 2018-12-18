@@ -5,7 +5,6 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
   Container
 } from 'reactstrap';
@@ -27,18 +26,20 @@ export default class TopMenu extends React.Component {
   }
   render() {
     return (
-      <Navbar color="light" light expand="md" className = "position-fixed fixed-top">
+      <Navbar color="light" light expand="md" className="position-sticky sticky-top">
         <Container>
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              
-              <NavItem>
+              {/* <NavItem> */}
                 <NavLink>
-                  <Link to='/products'>products</Link>
+                  <Link to='/'>Home</Link>
                 </NavLink>
-              </NavItem>
+              {/* </NavItem> */}
+              <NavLink>
+                <Link to='/products'>products</Link>
+              </NavLink>
               <NavLink>
                 <Link to='/about'>About</Link>
               </NavLink>

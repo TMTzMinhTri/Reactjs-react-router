@@ -34,7 +34,7 @@ class Home extends Component {
         )
 
         content.push(
-            <ProductContainer key="3" title="San Pham Moi" type="banchay"></ProductContainer>
+            <ProductContainer key="3" title="San Pham ban chay" type="banchay"></ProductContainer>
         )
         
         /*_content.push(

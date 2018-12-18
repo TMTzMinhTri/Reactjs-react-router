@@ -1,123 +1,23 @@
 import React, { Component } from 'react';
-import Page from "./Page";
 import {
-    Container, Row, Col,
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    Container, Row, 
 } from 'reactstrap';
 
+import Product from "../components/products/Product"
+import Page from "./Page";
+import data from "../data";
 class About extends Component {
+    onOpenModal() { }
     showAbout() {
+        let _data = data.getProductList("team");
         let content = [];
         content.push(
-            <div key='one'>
-                <Container>
-                    <Row>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
+            <div key='one' className = ''>
+                <p className="h2 text-center z">Các thành viên trong nhóm</p>
+                <Container className='align-items-sm-center '>
+                    <Row className='mt-4'>
+                        {_data.map(item => (<Product item={item} />))}
                     </Row>
-                    <Row>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://picsum.photos/318/180" alt="Card image cap" />
-                                <CardBody>
-                                    <CardTitle>Card title</CardTitle>
-                                    <CardSubtitle>Card subtitle</CardSubtitle>
-                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                    <Button>Button</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
-
                 </Container>
             </div>
         );
