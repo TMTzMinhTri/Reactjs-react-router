@@ -8,3 +8,10 @@ img{
     width: 100%;
     height: 50%;
 }
+.circle{
+    border-radius: 50% !important;
+}
+.img2 img{
+    width: 100%;
+    height: 80%;
+}

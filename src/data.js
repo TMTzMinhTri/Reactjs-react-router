@@ -15,41 +15,41 @@ let ProductsList = [{
     "name": "Greenlam",
     "discription": "interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis",
     "imgURL": "http://dummyimage.com/322x242.jpg/dddddd/000000",
-    "type": ["team"]
+    "type": ["all"]
 }, {
     "id": "e5aed85d-ff52-42fd-b7b2-9eab3cb59868",
     "name": "Tampflex",
     "discription": "tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non",
     "imgURL": "http://dummyimage.com/345x218.jpg/cc0000/ffffff",
-    "type": ["team"]
+    "type": ["all"]
 
 }, {
     "id": "e740224a-17fb-443b-aa26-530e25919417",
     "name": "Pannier",
     "discription": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis",
     "imgURL": "http://dummyimage.com/315x214.jpg/cc0000/ffffff",
-    "type": ["team"]
+    "type": ["all"]
 
 }, {
     "id": "f778b8a8-2705-4867-820c-737c6a7a0c74",
     "name": "Greenlam",
     "discription": "venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede",
     "imgURL": "http://dummyimage.com/336x232.jpg/5fa2dd/ffffff",
-    "type": ["team"]
+    "type": ["all"]
 
 }, {
     "id": "aefb40e5-ac81-4fd8-8c39-10c8105c9de3",
     "name": "Konklab",
     "discription": "blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere",
     "imgURL": "http://dummyimage.com/321x250.jpg/5fa2dd/ffffff",
-    "type": ["team"]
+    "type": ["all"]
 
 }, {
     "id": "1796d1e7-1522-4036-b5b4-08154613a1ec",
     "name": "Solarbreeze",
     "discription": "erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at",
     "imgURL": "http://dummyimage.com/330x221.jpg/5fa2dd/ffffff",
-    "type": ["team"]
+    "type": ["all"]
 
 }, {
     "id": "5fa10bd8-a197-4119-8c15-93b3d2d999d5",
@@ -184,47 +184,64 @@ let ProductsList = [{
     "name": "Job",
     "discription": "eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque",
     "imgURL": "http://dummyimage.com/350x232.jpg/5fa2dd/ffffff"
-}, {
-    "id": "192e31bb-d126-467f-8208-a4a1c5477850",
-    "name": "Zathin",
-    "discription": "cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
-    "imgURL": "http://dummyimage.com/306x220.jpg/5fa2dd/ffffff"
-}, {
-    "id": "ac3fd15c-9204-4f9f-86c3-c59077b36ef6",
-    "name": "Cookley",
-    "discription": "eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
-    "imgURL": "http://dummyimage.com/325x201.jpg/dddddd/000000"
-}, {
-    "id": "1f3d4356-7180-42ee-b941-ae743c6bbf01",
-    "name": "Alphazap",
-    "discription": "iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo",
-    "imgURL": "http://dummyimage.com/333x203.jpg/cc0000/ffffff"
-}, {
-    "id": "1839cdb8-5397-40c0-987a-da145f444202",
-    "name": "Sonsing",
-    "discription": "pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus",
-    "imgURL": "http://dummyimage.com/328x246.jpg/dddddd/000000"
-}, {
-    "id": "5da585ce-e411-43c4-93c3-30cbcae35854",
-    "name": "Span",
-    "discription": "ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet",
-    "imgURL": "http://dummyimage.com/344x234.jpg/dddddd/000000"
-}, {
-    "id": "e2e37d17-1f9a-4228-b0a0-264f92d2d061",
-    "name": "Domainer",
-    "discription": "lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et",
-    "imgURL": "http://dummyimage.com/349x205.jpg/ff4444/ffffff"
-}];
-
-module.exports = { 
-    getProductList: (type)=>{
-        let result = [];
-        for(let i in ProductsList) {
-            if(ProductsList[i].type && ProductsList[i].type.indexOf(type) !== -1) {
-                result.push(ProductsList[i])
-            }
-        }
-
-        return result
-    }
 }
+];
+
+let myTeam = [
+    {
+        "id": "192e31bb-d126-467f-8208-a4a1c5477850",
+        "name": "Trần Minh Trí",
+        "MSSV": "1611062063",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+        "type": "team"
+    }, {
+        "id": "ac3fd15c-9204-4f9f-86c3-c59077b36ef6",
+        "name": "Đinh sỹ hiếu",
+        "MSSV": "1611062098",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/20/image.png",
+        "type": "team"
+    }, {
+        "id": "1f3d4356-7180-42ee-b941-ae743c6bbf01",
+        "name": "Nguyễn Đăng Quang",
+        "MSSV": "1611070202",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/20/dangquang.jpg",
+        "type": "team"
+    }, {
+        "id": "1839cdb8-5397-40c0-987a-da145f444202",
+        "name": "Nguyễn Văn Duy",
+        "MSSV": "1411040229",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+        "type": "team"
+    }, {
+        "id": "5da585ce-e411-43c4-93c3-30cbcae35854",
+        "name": "nguyễn huỳnh tiến",
+        "MSSV": "1611143380",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+        "type": "team"
+    }, {
+        "id": "e2e37d17-1f9a-4228-b0a0-264f92d2d061",
+        "name": "Trần nguyễn hoàng sang",
+        "MSSV": "1611062151",
+        "imgURL": "https://uphinhnhanh.com/images/2018/12/20/imagefb9960d344a21c48.png",
+        "type": "team"
+    }
+];
+
+module.exports.getMyTeamList = ((type) => {
+    let result = [];
+    for (let i in myTeam) {
+        if (myTeam[i].type && myTeam[i].type.indexOf(type) !== -1) {
+            result.push(myTeam[i])
+        }
+    }
+    return result
+});
+module.exports.getProductList = ((type) => {
+    let result = [];
+    for (let i in ProductsList) {
+        if (ProductsList[i].type && ProductsList[i].type.indexOf(type) !== -1) {
+            result.push(ProductsList[i])
+        }
+    }
+    return result
+})
