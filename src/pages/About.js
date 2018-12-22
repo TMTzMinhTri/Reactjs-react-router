@@ -1,18 +1,40 @@
 import React, { Component } from 'react';
 import {
-    Container, Row, 
+    Container, Row,
 } from 'reactstrap';
+import axios from 'axios';
 
 import Team from "../components/about/Team"
 import Page from "./Page";
 import data from "../data";
 class About extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            member: []
+        }
+    }
+
     onOpenModal() { }
+
+    componentWillMount() {
+        let url = 'http://localhost:3001/myTeam';
+        axios.get(url)
+            .then((res) => {
+                let member = res.data;
+                this.setState({
+                    member : member
+                })
+                console.log(this.state)
+            })
+    }
+
     showAbout() {
-        let _data = data.getMyTeamList("team");
+        let _data = this.state;
+        console.log(_data);
         let content = [];
         content.push(
-            <div key='one' className = ''>
+            <div key='one' className=''>
                 <p className="h2 text-center z">Các thành viên trong nhóm</p>
                 <Container className='align-items-sm-center '>
                     <Row className='mt-4'>

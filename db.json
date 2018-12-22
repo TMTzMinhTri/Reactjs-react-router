@@ -1,0 +1,46 @@
+{
+    "myTeam" : [
+        {
+            "id": "192e31bb-d126-467f-8208-a4a1c5477850",
+            "name": "Trần Minh Trí",
+            "MSSV": "1611062063",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+            "type": "team"
+        },
+        {
+            "id": "ac3fd15c-9204-4f9f-86c3-c59077b36ef6",
+            "name": "Đinh sỹ hiếu",
+            "MSSV": "1611062098",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/20/image.png",
+            "type": "team"
+        },
+        {
+            "id": "1f3d4356-7180-42ee-b941-ae743c6bbf01",
+            "name": "Nguyễn Đăng Quang",
+            "MSSV": "1611070202",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/20/dangquang.jpg",
+            "type": "team"
+        },
+        {
+            "id": "1839cdb8-5397-40c0-987a-da145f444202",
+            "name": "Nguyễn Văn Duy",
+            "MSSV": "1411040229",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+            "type": "team"
+        },
+        {
+            "id": "5da585ce-e411-43c4-93c3-30cbcae35854",
+            "name": "nguyễn huỳnh tiến",
+            "MSSV": "1611143380",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/19/minhtri.jpg",
+            "type": "team"
+        },
+        {
+            "id": "e2e37d17-1f9a-4228-b0a0-264f92d2d061",
+            "name": "Trần nguyễn hoàng sang",
+            "MSSV": "1611062151",
+            "imgURL": "https://uphinhnhanh.com/images/2018/12/20/imagefb9960d344a21c48.png",
+            "type": "team"
+        }
+    ]
+}
