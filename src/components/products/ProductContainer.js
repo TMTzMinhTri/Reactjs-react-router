@@ -1,12 +1,35 @@
 import React from 'react';
 import Product from './Product';
-import data from '../../data';
+import axios from "axios";
+
 
 import { Row, Container } from 'reactstrap';
 
 class ProductContainer extends React.Component {
-    buildContent = (type) => {
-        let _data = data.getProductList(type);
+    constructor(props) {
+        super(props);
+        this.state = {
+            products : []
+        };
+    }
+
+    componentDidMount(){
+        let url = "http://localhost:3001/products";
+        axios.get(url)
+            .then((res)=>{
+                let productNew = res.data.filter((item) => {
+                    return item.type === this.props.type;
+                });
+                console.log(productNew);
+
+                this.setState({
+                    products: productNew
+                })
+            })
+        }
+
+    buildContent = () => {
+        let _data = this.state.products;
         let _content = [];
         _content.push(
             <div key="line1">

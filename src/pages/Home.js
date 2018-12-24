@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 //     CardTitle, Button, Container,CardLink
 // } from 'reactstrap';
 // import Modal from "react-responsive-modal";
-import axios from "axios";
 
 import Slide from '../components/Slide';
 import Page from './Page';
@@ -16,18 +15,9 @@ class Home extends Component {
         super(props);
         this.state = {
             open: false,
-            products : []
         };
     }
-    componentWillMount(){
-        let url = "http://localhost:3001/products";
-        axios.get(url)
-            .then((res)=>{
-                this.setState({
-                    products: res.data
-                })
-            })
-    }
+    
     onOpenModal = () => {
         this.setState({ open: true });
     };
