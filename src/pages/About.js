@@ -17,7 +17,7 @@ class About extends Component {
 
     onOpenModal() { }
 
-    componentWillMount() {
+    componentDidMount() {
         let url = 'http://localhost:3001/myTeam';
         axios.get(url)
             .then((res) => {
