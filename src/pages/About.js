@@ -6,7 +6,7 @@ import axios from 'axios';
 
 import Team from "../components/about/Team"
 import Page from "./Page";
-import data from "../data";
+
 class About extends Component {
     constructor(props) {
         super(props);
@@ -25,12 +25,11 @@ class About extends Component {
                 this.setState({
                     member : member
                 })
-                console.log(this.state)
             })
     }
 
     showAbout() {
-        let _data = this.state;
+        let _data = this.state.member;
         console.log(_data);
         let content = [];
         content.push(

@@ -41,8 +41,7 @@ class Footer extends Component {
                         </Col>
                         <Col className= 'm-5'>
                             <Row><p>Bảo hành 365 ngày</p></Row>
-                            <Row><p>Đặt hàng và thu tiền tận nơi toàn quốc <br></br>
-                                <b>(028) 7307 1441</b></p></Row>
+                            <Row><p>Đặt hàng và thu tiền tận nơi toàn quốc <b>(028) 7307 1441</b></p></Row>
                             <Row><p>Giao hàng Toàn quốc</p></Row>
                             <Row><p>Bảo hành 365 ngày</p></Row>
                             <Row><p>Bảo hành 365 ngày</p></Row>

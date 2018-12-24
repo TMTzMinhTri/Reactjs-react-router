@@ -5,7 +5,7 @@ import data from '../../data';
 import { Row, Container } from 'reactstrap';
 
 class ProductContainer extends React.Component {
-    buildContent(type) {
+    buildContent = (type) => {
         let _data = data.getProductList(type);
         let _content = [];
         _content.push(
