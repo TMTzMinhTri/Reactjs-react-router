@@ -37,44 +37,7 @@ class Home extends Component {
             <ProductContainer key="3" title="San Pham ban chay" type="banchay"></ProductContainer>
         )
         
-        /*_content.push(
-            <div key="line1">
-                <Slide />
-                <Container>
-                    <p className='text-center m-3 h3'>Danh Sách Sản Phẩm</p>
-                    <Row>
-                        {productSale.map(item => (
-                            <Col md='4' sm='5'>
-                                <Card>
-                                    <CardImg top width="100%"
-                                        src={item.imgURL}
-                                        alt="Card image cap" />
-                                    <CardBody>
-                                        <CardTitle>{item.name}</CardTitle>
-                                        <CardText>{item.discription}</CardText>
-                                        <Button onClick={this.onOpenModal}>Xem chi tiết</Button>
-                                        <Modal open={open} onClose={this.onCloseModal} center>
-                                            <Card className = "d-flex">
-                                                <CardBody>
-                                                    <CardTitle>Card title</CardTitle>
-                                                </CardBody>
-                                                <img width="100%" src={item.imgURL} alt="Card image cap" />
-                                                <CardBody>
-                                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                                    <CardLink href="#">Card Link</CardLink>
-                                                    <CardLink href="#">Another Link</CardLink>
-                                                </CardBody>
-                                            </Card>
-                                        </Modal>
-                                    </CardBody>
-                                </Card>
-                            </Col>
-                        ))}
-                    </Row>
-                </Container>
-
-            </div>
-        )*/
+        
         return <div key="line1">{content}</div>
     }
     render() {

@@ -4,6 +4,7 @@ import {
 } from 'reactstrap';
 import axios from 'axios';
 
+
 import Team from "../components/about/Team"
 import Page from "./Page";
 
@@ -17,13 +18,14 @@ class About extends Component {
 
     onOpenModal() { }
 
-    componentDidMount() {
-        let url = 'http://localhost:3001/myTeam';
+    componentDidMount = () => {
+        let url = 'http://localhost:4000/api/users';
+
         axios.get(url)
             .then((res) => {
                 let member = res.data;
                 this.setState({
-                    member : member
+                    member: member
                 })
             })
     }
@@ -33,14 +35,17 @@ class About extends Component {
         console.log(_data);
         let content = [];
         content.push(
-            <div key='one' className=''>
-                <p className="h2 text-center z">Các thành viên trong nhóm</p>
-                <Container className='align-items-sm-center '>
-                    <Row className='mt-4'>
-                        {_data.map(item => (<Team item={item} />))}
-                    </Row>
-                </Container>
-            </div>
+            
+                <div key='one' className=''>
+
+                    <p className="h2 text-center z">Các thành viên trong nhóm</p>
+                    <Container className='align-items-sm-center '>
+                        <Row className='mt-4'>
+                            {_data.map(item => (<Team item={item} />))}
+                        </Row>
+                    </Container>
+
+                </div>
         );
         return content
     }
