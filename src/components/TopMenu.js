@@ -49,8 +49,7 @@ export default class TopMenu extends React.Component {
               </NavLink>
               <NavLink>
                 <cartContext.Consumer>
-                  { ({ cartItem }) => <Link to='/about'>{icCart}Cart [{cartItem.length}]</Link> }
-                  
+                  { ({ cartItem }) => <Link to='/myCart'>{icCart}Cart [{cartItem.length}]</Link> }
                 </cartContext.Consumer>
               </NavLink>
             </Nav>

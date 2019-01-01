@@ -17,7 +17,7 @@ class Home extends Component {
             open: false,
         };
     }
-    
+
     onOpenModal = () => {
         this.setState({ open: true });
     };
@@ -36,15 +36,13 @@ class Home extends Component {
         content.push(
             <ProductContainer key="3" title="San Pham ban chay" type="banchay"></ProductContainer>
         )
-        
-        
+
+
         return <div key="line1">{content}</div>
     }
     render() {
         return (
-            <div>
-                <Page cls="home-page" content={this.buildContent()} />
-            </div>
+            <Page cls="home-page" content={this.buildContent()} />
         );
     }
 }

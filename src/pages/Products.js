@@ -46,15 +46,13 @@ class Products extends Component {
         //     </div>
         // )
         contents.push(
-                <ProductContainer key="2" title="Các sản phẩm hiện có tại shop" type="all" products={this.state.products}></ProductContainer>
+            <ProductContainer key="2" title="Các sản phẩm hiện có tại shop" type="all" products={this.state.products}></ProductContainer>
         )
         return contents;
     }
     render() {
         return (
-            <div>
-                <Page cls="product-page" content={this.showAllProducts()} />
-            </div>
+            <Page cls="product-page" content={this.showAllProducts()} />
         );
     }
 }

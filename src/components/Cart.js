@@ -10,11 +10,12 @@ export class CartProvider extends Component{
         };
     }
     addToCart = (product) => {
-        console.log(product);
+        //console.log(product);
         
         this.setState({
             cartItem : this.state.cartItem.concat(product)
         });
+        
     }
 
     render(){

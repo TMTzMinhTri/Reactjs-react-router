@@ -7,8 +7,6 @@ import {
 } from 'reactstrap';
 
 class Team extends React.Component {
-    onOpenModal() { }
-    onCloseModal() { }
     render() {
         return (
             <Col md='4' sm='12' className="mt-2">

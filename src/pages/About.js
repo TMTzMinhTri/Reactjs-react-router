@@ -35,25 +35,23 @@ class About extends Component {
         console.log(_data);
         let content = [];
         content.push(
-            
-                <div key='one' className=''>
 
-                    <p className="h2 text-center z">Các thành viên trong nhóm</p>
-                    <Container className='align-items-sm-center '>
-                        <Row className='mt-4'>
-                            {_data.map(item => (<Team item={item} />))}
-                        </Row>
-                    </Container>
+            <div key='one' className=''>
 
-                </div>
+                <p className="h2 text-center z">Các thành viên trong nhóm</p>
+                <Container className='align-items-sm-center '>
+                    <Row className='mt-4'>
+                        {_data.map(item => (<Team item={item} />))}
+                    </Row>
+                </Container>
+
+            </div>
         );
         return content
     }
     render() {
         return (
-            <div>
-                <Page cls="product-page" content={this.showAbout()} />
-            </div>
+            <Page cls="product-page" content={this.showAbout()} />
         );
     }
 }
