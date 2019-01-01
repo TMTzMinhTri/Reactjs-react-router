@@ -4,9 +4,10 @@ import {
     CardTitle, Button, Col
 } from 'reactstrap';
 
+import { cartContext } from "../Cart"
+
 class Product extends React.Component {
-    onOpenModal() { }
-    onCloseModal() { }
+
     render() {
         return (
             <Col md='4' sm='12' className="mt-2">
@@ -17,7 +18,9 @@ class Product extends React.Component {
                     <CardBody>
                         <CardTitle>{this.props.item.name}</CardTitle>
                         <CardText>{this.props.item.discription}</CardText>
-                        <Button onClick={this.onOpenModal}>Xem chi tiết</Button>
+                        <cartContext.Consumer>
+                            {({addToCart}) =>  <Button onClick= {() => addToCart(this.props)}>Thêm vào giỏ</Button> } 
+                        </cartContext.Consumer>
                     </CardBody>
                 </Card>
             </Col>
